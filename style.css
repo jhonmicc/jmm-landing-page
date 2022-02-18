@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* .row {
+    align-items: center;
+} */
+
+
+/* navbar */
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    padding: 0 0.4rem 0.4rem 0.4rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 0;
+}
+
+.col-lg .flexend {
+    width: 100%;
+}
+
+.align-items-center {
+    padding: 2rem;
+}
+
+
+/* jumbotron */
+
+.jumbotron {
+    background-image: url("./img/jumbotron-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    position: relative;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron .flex {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 0) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: #ffffff;
+    margin: 0;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-4 strong {
+    font-weight: 500;
+}
+
+.h1-text {
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.our-work {
+    margin-top: 1.875rem;
+}
+
+.portfolio {
+    padding: 0.3125rem 1.0625rem;
+    color: #ffffff;
+    background-color: #0b63dc;
+    text-decoration: none;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.portfolio:hover {
+    color: #ffffff;
+}
+
+
+/* info panel */
+
+.info-panel {
+    width: 70%;
+    box-shadow: 0 0.1875rem 1.25rem rgba(0, 0, 0, 0.27);
+    border-radius: 0.75rem;
+    margin-top: -4.5rem;
+    background-color: #ffffff;
+    z-index: 2;
+    padding: 1.25rem;
+}
+
+.flex-panel {
+    display: flex;
+    align-items: center;
+}
+
+.flex-panel img {
+    width: 26%;
+}
+
+.capt {
+    padding: 0 1rem;
+}
+
+.capt h4 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.capt p {
+    font-size: 0.8rem;
+    color: #acacac;
+}
+
+
+/* gallery */
+
+.col-lg {
+    padding: 0;
+}
+
+.gallery-text {
+    padding-left: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+.gallery-text h1 {
+    text-transform: uppercase;
+    color: #1c2c5d;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0.5rem 0 0 0;
+    letter-spacing: 0.05rem;
+    line-height: 1.05;
+}
+
+.gallery-text h1 strong {
+    font-weight: 500;
+}
+
+.gallery-text p {
+    color: #acacac;
+    font-size: 1rem;
+    margin: 1rem 0.5rem 1.5rem 0.5rem;
+}
+
+
+/* testimonial section */
+
+.flex-testi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-lg-7 {
+    padding: 0;
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+    color: #1c2c5d;
+    padding: 0 1.5rem;
+}
+
+.col-6 {
+    display: flex;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+figure figcaption {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1c2c5d;
+}
+
+figure small {
+    color: #acacac;
+    letter-spacing: 0.01rem;
+    font-size: 0.6rem;
+}
+
+.imgleft {
+    align-items: flex-end;
+    width: 40%;
+    margin-top: 2rem;
+    opacity: 0.4;
+}
+
+.imgright {
+    align-items: flex-start;
+    width: 40%;
+    margin-top: 2rem;
+    opacity: 0.4;
+}
+
+
+/* footer */
+
+footer {
+    padding: 4rem 0 6rem 0;
+    color: #acacac;
+}
+
+
+/* desktop */
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .navbar-brand,
+    .nav-link {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 79vh;
+    }
+    .h1-text {
+        width: 60%;
+    }
+    /* info panel */
+    .info-panel {
+        box-shadow: 0 0.1875rem 1.25rem rgba(0, 0, 0, 0.5);
+        border-radius: 0.75rem;
+        margin-top: -5.5rem;
+        background-color: #ffffff;
+        z-index: 2;
+        padding: 1.25rem;
+    }
+    .flex-panel {
+        display: flex;
+        align-items: center;
+    }
+    .capt {
+        padding: 1rem 1rem;
+    }
+    .capt h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1c2c5d;
+    }
+    .capt p {
+        font-size: 0.875rem;
+        color: #acacac;
+    }
+    /* gallery */
+    .flexend {
+        margin-left: 0;
+    }
+    .gallery {
+        background-color: #ffffff;
+        margin: 5rem 0 0 0;
+        padding: 0;
+    }
+    .col-lg {
+        padding: 0;
+    }
+    .gallery-text {
+        margin-left: 2rem;
+        line-height: 1;
+        text-align: left;
+    }
+    .gallery-text h1 {
+        text-transform: uppercase;
+        color: #1c2c5d;
+        font-size: 3.25rem;
+        font-weight: 300;
+        padding-right: 13rem;
+        margin: 0;
+        letter-spacing: 0.05rem;
+        line-height: 1.05;
+    }
+    .gallery-text h1 strong {
+        font-weight: 500;
+    }
+    .gallery-text p {
+        color: #acacac;
+        padding-right: 16rem;
+        font-size: 1.125rem;
+        margin: 2rem 0 2.5rem 0;
+    }
+    .gallerybtn {
+        margin-top: 2rem;
+    }
+    /* testimonial section */
+    .col-lg-7 {
+        padding: 0;
+        margin-top: 4rem;
+    }
+    blockquote {
+        text-align: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2.4rem;
+        padding: 0 1rem;
+        color: #1c2c5d;
+    }
+    figure {
+        margin-top: 1rem;
+    }
+    figure img {
+        width: 40%;
+        border-radius: 50%;
+    }
+    figure figcaption {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1c2c5d;
+    }
+    figure small {
+        color: #acacac;
+        letter-spacing: 0.01rem;
+        font-size: 0.75rem;
+    }
+}
